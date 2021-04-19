@@ -1,4 +1,4 @@
-ALGORITHM algorithm_name
+ALGORITHM algo_Sentence
 VAR
    i,L,Nb_C,Nb_W:=INTEGER;
    S:=STRING;
