@@ -1,0 +1,24 @@
+ALGORITHM algorithm_name
+VAR
+   i,L,Nb_C,Nb_W:=INTEGER;
+   S:=STRING;
+BEGIN
+    Nb_C:=0;
+    Nb_W:=0;
+    Read(S);
+    i:=0;
+
+    WHILE (S[i]=!'.') DO
+        i++
+    END_WHILE
+    L:=i;
+    FOR i FROM 0 TO L STEP i++  DO
+        IF (S[i]==' ') THEN
+            Nb_W++;
+    END_FOR
+    FOR i FROM 0 TO L STEP i++  DO
+        IF (S[i]=='a'||'e'||'i'||'o'||'u'||'y') THEN
+            Nb_C++;
+        END_IF
+    END_FOR
+END
