@@ -8,7 +8,7 @@ BEGIN
     Read(S);
     i:=0;
 
-    WHILE (S[i]=!'.') DO
+    WHILE (S[i]<>'.') DO
         i++
     END_WHILE
     L:=i;
